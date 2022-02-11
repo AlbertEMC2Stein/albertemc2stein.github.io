@@ -1,3 +1,24 @@
-theme: jekyll-theme-minimal
+remote_theme: saifkhichi96/simple-material
 
-title: Tim
+
+# -----------------------------------------------------------------------------
+# Site Navigation
+# -----------------------------------------------------------------------------
+menu_main:
+  - title:                   Home
+    icon:                    roofing
+    url:                     /
+  - title:                   About Me
+    icon:                    person
+    url:                     /about/
+  - title:                   Projects
+    icon:                    cases
+    url:                     /projects/
+
+
+# Includes an icon in the footer for each username you enter
+menu_social:
+  github:                  albertemc2stein
+
+breadcrumbs: true
+installable: true

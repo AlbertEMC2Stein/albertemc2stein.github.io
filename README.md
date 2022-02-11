@@ -1,6 +1,15 @@
-# Tim's Homepage
+---
+layout: page
+permalink: index.html
+---
+
+# Tim's Startseite
+Hallo!
 
 
-## Projects
+## Projekte
 - [COVID Simulation](./COVID-CNS)
 
+
+## GitHub Stats
+{% include widget_github.html %}
