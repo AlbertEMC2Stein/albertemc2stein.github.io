@@ -1,15 +1,18 @@
 ---
 layout: page
+drawer: true
+github_stats: true
 permalink: index.html
 ---
 
-# Tim's Startseite
-Hallo!
+{{ site.github.owner.bio }}
 
 
 ## Projekte
+
 - [COVID Simulation](./COVID-CNS)
 
 
 ## GitHub Stats
+
 {% include widget_github.html %}

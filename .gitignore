@@ -1,1 +1,7 @@
+# Jekyll build files
+_site/
+
+# macOS files
 .DS_Store
+._*
+Icon?

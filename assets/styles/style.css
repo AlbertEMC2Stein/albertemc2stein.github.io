@@ -1,0 +1,11 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Background (different in light/dark) */
+    --mdc-theme-background: #11010a;
+    --mdc-theme-border: #11020d;
+
+    /* Surfaces (different in light/dark) */
+    --mdc-theme-surface: #160a0f;
+    --mdc-theme-on-surface: #ffffff;
+  }
+}

@@ -1,24 +1,52 @@
 remote_theme: saifkhichi96/simple-material
 
+author:                    AlbertEMC2Stein
+favicon:                   /favicon.ico
+logo:                      /assets/images/logo.png
 
 # -----------------------------------------------------------------------------
 # Site Navigation
 # -----------------------------------------------------------------------------
 menu_main:
   - title:                   Home
-    icon:                    roofing
+    icon:                    home
     url:                     /
   - title:                   About Me
     icon:                    person
     url:                     /about/
   - title:                   Projects
-    icon:                    cases
+    icon:                    code
     url:                     /projects/
+
+
+# Includes the menu_main links in the footer as well
+navigation_footer:         true
 
 
 # Includes an icon in the footer for each username you enter
 menu_social:
-  github:                  albertemc2stein
+  # email:
+  github:                  AlbertEMC2Stein
+  # linkedin:
+  # twitter:
+  # stackoverflow:
+  # youtube:
+  # playconsole:
 
-breadcrumbs: true
-installable: true
+
+# Includes links to your site's privacy policy and terms of service in the footer
+menu_footer:
+  - privacy:
+    title:                 'Privacy Policy'
+    url:                   '/privacy/'
+
+# Shows breadcrubms on each page
+breadcrubms:               true
+
+# Make website an installable PWA
+installable:               true
+
+
+# --- #
+# You don't need to modify the following values.
+include:                   ['_pages']

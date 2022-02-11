@@ -1,14 +1,12 @@
 {
   "lang": "de",
-  "short_name": "Tim",
-  "name": "Tim's Homepage",
+  "short_name": "Tim's Projects",
+  "name": "Tim Prokosch's Projects",
   "categories": [""],
-  "tagline": "",
-  "description": "",
   "background_color": "#fafafa",
   "display": "standalone",
   "orientation": "natural",
   "scope": "/",
   "start_url": "/",
-  "theme_color": "#3949ab"
+  "theme_color": "#af4448"
 }
