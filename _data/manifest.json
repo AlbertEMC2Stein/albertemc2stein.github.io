@@ -5,7 +5,18 @@
   "categories": [""],
   "background_color": "#fafafa",
   "display": "standalone",
-  "orientation": "natural",
+  "icons": [{
+      "src": "/assets/images/icons/192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/assets/images/icons/256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    }
+  ],
+  "orientation": "portrait",
   "scope": "/",
   "start_url": "/",
   "theme_color": "#af4448"
