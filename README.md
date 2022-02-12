@@ -10,7 +10,7 @@ permalink: index.html
 
 ## Projekte
 
-- [COVID Simulation](./COVID-CNS)
+- [COVID Simulation](./COVID19-CNS)
 
 
 ## GitHub Stats
