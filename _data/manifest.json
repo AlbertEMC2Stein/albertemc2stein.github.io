@@ -3,7 +3,7 @@
   "short_name": "Tim's Projects",
   "name": "Tim Prokosch's Projects",
   "categories": [""],
-  "background_color": "#fafafa",
+  "background_color": "#cce8e6",
   "display": "standalone",
   "icons": [{
       "src": "/assets/images/icons/192.png",
@@ -19,5 +19,5 @@
   "orientation": "portrait",
   "scope": "/",
   "start_url": "/",
-  "theme_color": "#af4448"
+  "theme_color": "#006a67"
 }

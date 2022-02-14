@@ -1,11 +1,31 @@
+:root {
+  /* Border color */
+  --mdc-theme-border: #cce8e61f;
+
+  /* Background (different in light/dark) */
+  --mdc-theme-background: #cce8e6;
+  --mdc-theme-on-background: #051f1e;
+
+  /* Surfaces (different in light/dark) */
+  --mdc-theme-surface: #dae4e3;
+  --mdc-theme-on-surface: #3f4948;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
+    /* Border color */
+    --mdc-theme-border: #1b35341f;
+
     /* Background (different in light/dark) */
-    --mdc-theme-background: #11010a;
-    --mdc-theme-border: #11020d;
+    --mdc-theme-background: #1b3534;
+    --mdc-theme-on-background: #b1ccca;
 
     /* Surfaces (different in light/dark) */
-    --mdc-theme-surface: #160a0f;
+    --mdc-theme-surface: #324b4a;
     --mdc-theme-on-surface: #ffffff;
   }
+}
+
+.mdc-top-app-bar__title img {
+    filter: invert(29%) sepia(95%) saturate(431%) hue-rotate(129deg) brightness(93%) contrast(103%);
 }
