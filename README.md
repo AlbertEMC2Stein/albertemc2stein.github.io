@@ -1,5 +1,6 @@
 ---
 layout: page
+title: Tim
 drawer: true
 github_stats: true
 permalink: index.html
@@ -8,7 +9,7 @@ permalink: index.html
 {{ site.github.owner.bio }}
 
 
-## Projekte
+## Projects
 
 - [COVID Simulation](./COVID19-CNS)
 

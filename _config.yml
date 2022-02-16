@@ -49,4 +49,22 @@ installable:               true
 
 # --- #
 # You don't need to modify the following values.
+collections:
+  docs:
+    output:                true
+    permalink:             /docs/:path/
+  pages:
+    output:                true
+    permalink:             /:title/
+  projects:
+    output:                true
+    permalink:             /projects/:path/
+  services:
+    output:                true
+    permalink:             /services/:path/
+    
+
+include:                   ['_docs']
 include:                   ['_pages']
+include:                   ['_projects']
+include:                   ['_services']
