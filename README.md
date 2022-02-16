@@ -11,9 +11,14 @@ permalink: index.html
 
 ## Projects
 
-- [COVID Simulation](./COVID19-CNS)
+{% include list_projects_featured.html %}
+
+[See All](./projects/){: .mdc-button}
 
 
 ## GitHub Stats
 
 {% include widget_github.html %}
+
+[Visit Profile](//github.com/albertemc2stein/){: .mdc-button}
+
