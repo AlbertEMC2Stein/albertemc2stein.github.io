@@ -1,23 +1,9 @@
 :root {
-  /* Border color */
-  --mdc-theme-border: #cce8e61f;
-
-  /* Background (different in light/dark) */
-  --mdc-theme-background: #cce8e6;
-  --mdc-theme-on-background: #051f1e;
-
-  /* Surfaces (different in light/dark) */
-  --mdc-theme-surface: #dae4e3;
-  --mdc-theme-on-surface: #3f4948;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
     /* Primary element color */
     --mdc-theme-primary: #803338;
     --mdc-theme-primary-variant: #a04145;
     --mdc-theme-on-primary: #ccb8b9;
-      
+
     /* Border color */
     --mdc-theme-border: #403d4d;
 
@@ -28,8 +14,36 @@
     /* Surfaces (different in light/dark) */
     --mdc-theme-surface: #16171c;
     --mdc-theme-on-surface: #ffffff;
-    
+
     /* Backgroudn shadow color */
     --mdc-theme-shadow: #a04145;
-  }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Primary element color */
+        --mdc-theme-primary: #803338;
+        --mdc-theme-primary-variant: #a04145;
+        --mdc-theme-on-primary: #ccb8b9;
+
+        /* Border color */
+        --mdc-theme-border: #403d4d;
+
+        /* Background (different in light/dark) */
+        --mdc-theme-background: #170d0d;
+        --mdc-theme-on-background: #b1ccca;
+
+        /* Surfaces (different in light/dark) */
+        --mdc-theme-surface: #16171c;
+        --mdc-theme-on-surface: #ffffff;
+
+        /* Backgroudn shadow color */
+        --mdc-theme-shadow: #a04145;
+    }
+}
+
+.project-icon {
+    box-shadow: 0 0 5px 0 var(--mdc-theme-shadow);
+    -webkit-box-shadow: 0 0 5px 0 var(--mdc-theme-shadow);
+    -moz-box-shadow: 0 0 5px 0 var(--mdc-theme-shadow);
 }
