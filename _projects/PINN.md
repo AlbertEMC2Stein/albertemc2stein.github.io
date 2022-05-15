@@ -2,13 +2,15 @@
 layout: project
 title: PINN
 description: A project implementing the possibility of solving various kinds of differential equations with neural networks. 
-categories: [Thesis, Neural Networks]
+categories: [Thesis, Neural Networks, TensorFlow, featured]
 icon: https://cdn-icons-png.flaticon.com/512/2103/2103633.png
-device: Desktop
-demo: UryIL4kUcx8
+code: AlbertEMC2Stein/PINN
 icons: true
 ---
 
-## Blah blah
+## About The Project
 
-Blah blah blah
+This project gives the user the ability to solve various kinds of differential equation using neural networks. Some example equations
+are provided alongside some rudimentary methods for visualizing the results.
+
+[Learn More]({{ '/PINN/' | relative_url }}){: .mdc-button .mdc-button--unelevated}
