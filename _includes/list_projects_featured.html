@@ -1,0 +1,14 @@
+<div>
+  {% for page in site.projects %}
+  {% assign categories = page.categories %}
+  {% if categories contains 'featured' %}
+  <section class="project-summary" style="display: flex;">
+    <img loading="lazy" class="project-logo-featured" src="{{ page.icon | relative_url }}" alt="{{ page.title | slice: 0 }}" style="width: 64px; height: 64px;" />
+    <div style="width: calc(100% - 72px)">
+      <h3 class="project-title"><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h3>
+      <div>{{ page.description }}</div>
+    </div>
+  </section>
+  {% endif %}
+  {% endfor %}
+</div>
