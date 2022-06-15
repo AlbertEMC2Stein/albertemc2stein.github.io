@@ -3,8 +3,8 @@ layout: project
 title: COVID-19 Simulator
 description: A project modelling the spread of infectious diseases via contact networks.
 categories: [COVID-19, Simulation, featured]
-icon: /COVID19-CNS/images/logo.png
-image: /COVID19-CNS/images/terminal.png
+icon: https://github.com/AlbertEMC2Stein/COVID19-CNS/raw/main/images/logo.png
+image: https://github.com/AlbertEMC2Stein/COVID19-CNS/raw/main/images/terminal.png
 code: AlbertEMC2Stein/COVID19-CNS
 icons: true
 ---

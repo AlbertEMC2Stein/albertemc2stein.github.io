@@ -1,7 +1,7 @@
 :root {
     /* Primary element color */
-    --mdc-theme-primary: #803338;
-    --mdc-theme-primary-variant: #a04145;
+    --mdc-theme-primary: #d32f2f;
+    --mdc-theme-primary-variant: #7f0000;
     --mdc-theme-on-primary: #ccb8b9;
 
     /* Border color */
@@ -22,8 +22,8 @@
 @media (prefers-color-scheme: dark) {
     :root {
         /* Primary element color */
-        --mdc-theme-primary: #803338;
-        --mdc-theme-primary-variant: #a04145;
+        --mdc-theme-primary: #d32f2f;
+        --mdc-theme-primary-variant: #e53935;
         --mdc-theme-on-primary: #ccb8b9;
 
         /* Border color */
@@ -38,7 +38,7 @@
         --mdc-theme-on-surface: #ffffff;
 
         /* Backgroudn shadow color */
-        --mdc-theme-shadow: #a04145;
+        --mdc-theme-shadow: #7f0000;
     }
 }
 

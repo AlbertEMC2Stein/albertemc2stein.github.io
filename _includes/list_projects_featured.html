@@ -1,14 +1,25 @@
-<div>
-  {% for page in site.projects %}
-  {% assign categories = page.categories %}
-  {% if categories contains 'featured' %}
-  <section class="project-summary" style="display: flex;">
-    <img loading="lazy" class="project-logo-featured" src="{{ page.icon | relative_url }}" alt="{{ page.title | slice: 0 }}" style="width: 64px; height: 64px;" />
-    <div style="width: calc(100% - 72px)">
-      <h3 class="project-title"><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h3>
-      <div>{{ page.description }}</div>
+<div class="mdc-layout-grid">
+    <div class="mdc-layout-grid__inner">
+        {% for page in site.projects %}
+        {% assign categories = page.categories %}
+        {% if categories contains 'featured' %}
+        <section class="mdc-layout-grid__cell mdc-card mdc-card--outlined">
+            <div class="mdc-card__primary-action" onclick="window.location.href='{{ page.url | relative_url }}'">
+                <div class="mdc-card__media mdc-card__media--square">
+                    <div class="mdc-card__media-content">
+                        <img loading="lazy"
+                             src="{{ page.icon | relative_url }}"
+                             alt="{{ page.title | slice: 0 }}"/>
+                    </div>
+                </div>
+                <div class="mdc-card__content">
+                    <h3>{{ page.title }}</h3>
+                    <div>{{ page.description }}</div>
+                </div>
+                <span class="mdc-card__ripple"></span>
+            </div>
+        </section>
+        {% endif %}
+        {% endfor %}
     </div>
-  </section>
-  {% endif %}
-  {% endfor %}
 </div>

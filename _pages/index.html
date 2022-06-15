@@ -1,0 +1,176 @@
+---
+layout: empty
+title: Homepage
+github_stats: true
+permalink: /index.html
+---
+
+<style>
+    .page-labels {
+        width: 100%;
+        height: 32px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+
+    .page-labels span {
+        display: inline-block;
+        font-family: "Source Sans Pro", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-weight: bold;
+        border-bottom: 0;
+        padding: 0 8px 3px;
+    }
+
+    .page-labels span:hover {
+        color: var(--mdc-theme-primary);
+        cursor: pointer;
+    }
+
+    .page-labels span.active {
+        border-bottom: 2px solid var(--mdc-theme-primary-variant);
+        padding-bottom: 3px;
+    }
+
+    .pages {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .page {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 40px;
+        right: 0;
+        overflow: auto;
+    }
+
+    .page--inner {
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+        padding: var(--content-padding);
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    h2 {
+        font-family: "Source Sans Pro", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 4rem;
+        font-weight: bold;
+    }
+</style>
+
+<div class="pages">
+    <div class="page">
+        <div class="page--inner" style="height: 100%;">
+            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center;">
+                <img loading="lazy"
+                     src="{{ '/assets/images/me.png' | relative_url }}"
+                     alt="Profile picture"
+                     width="200"
+                     height="200"
+                     style="border-radius: 50%; border: 2px outset var(--mdc-theme-primary-variant);"/>
+
+                <h2>Tim</h2>
+                <p>Mathematics and Computer Science Student<br>
+                    <small>Technical University of Kaiserslautern</small></p>
+
+                <a class="mdc-button mdc-button--outlined" href="./about/">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="page hidden">
+        <div class="page--inner">
+            <div class="c-minor-r">
+
+                <h2>Work.</h2>
+                <br>
+
+                {% include widget_github.html %}
+                <br>
+
+                <a class="mdc-button mdc-button--unelevated" href="./projects/">All Projects</a>
+                <a class="mdc-button mdc-button--outlined" href="//github.com/albertemc2stein/">GitHub</a>
+
+            </div>
+
+            <div class="c-major">
+                {% include list_projects_featured.html %}
+
+
+            </div>
+        </div>
+    </div>
+
+<!--    <div class="page hidden">-->
+<!--        <div class="page&#45;&#45;inner">-->
+
+<!--        </div>-->
+<!--    </div>-->
+</div>
+
+<div class="page-labels">
+    <span class="active">Hello</span>
+    <span>Work</span>
+<!--    <span>Contact</span>-->
+</div>
+
+<script>
+    (function () {
+        // Handle page transitions
+        const pages = document.querySelectorAll(".page");
+        const labels = document.querySelectorAll(".page-labels span");
+        let currentPage = 0;
+        let pageTransition = false;
+        let pageTransitionTimeout = null;
+
+        function goToPage(page) {
+            pages[page].classList.remove("hidden");
+            labels[page].classList.add("active");
+
+            // Hide all pages except the current one
+            for (let i = 0; i < pages.length; i++) {
+                if (i !== page) {
+                    pages[i].classList.add("hidden");
+                    labels[i].classList.remove("active");
+                }
+            }
+        }
+
+        function nextPage() {
+            currentPage = (currentPage + 1) % pages.length;
+            goToPage(currentPage);
+        }
+
+        // Automatically transition to the next page
+        function autoTransition() {
+            if (pageTransition) {
+                return;
+            }
+            pageTransition = true;
+            pageTransitionTimeout = setTimeout(function () {
+                pageTransition = false;
+                nextPage()
+                autoTransition();
+            }, 5000);
+        }
+
+        // Manual transition on label click
+        for (let i = 0; i < labels.length; i++) {
+            labels[i].addEventListener("click", function () {
+                goToPage(i);
+            });
+        }
+
+        // autoTransition();
+    })();
+</script>
+
