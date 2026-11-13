@@ -1,16 +1,10 @@
-const CACHE = "pwabuilder-offline";
+// Retire the old offline cache so visitors receive the current site.
+self.addEventListener('install', () => self.skipWaiting());
 
-importScripts('https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js');
-
-self.addEventListener("message", (event) => {
-  if (event.data && event.data.type === "SKIP_WAITING") {
-    self.skipWaiting();
-  }
+self.addEventListener('activate', event => {
+  event.waitUntil((async () => {
+    await caches.delete('pwabuilder-offline');
+    await self.registration.unregister();
+    await self.clients.claim();
+  })());
 });
-
-workbox.routing.registerRoute(
-  new RegExp('/*'),
-  new workbox.strategies.StaleWhileRevalidate({
-    cacheName: CACHE
-  })
-);
