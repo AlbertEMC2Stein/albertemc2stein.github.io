@@ -439,7 +439,7 @@ a {
   color: #c8b184;
 }
 
-.light-heading>p {
+.light-heading > p {
   max-width: 260px;
   font:
     15px/1.6 Georgia,
@@ -483,12 +483,12 @@ a {
   stroke-width: 1.2;
 }
 
-.project-art svg path+path {
+.project-art svg path + path {
   stroke: #9eafa2;
   opacity: 0.7;
 }
 
-.project-art>span {
+.project-art > span {
   position: absolute;
   top: 20px;
   left: 22px;
@@ -552,7 +552,7 @@ a {
   flex: 1;
 }
 
-.project-side article>span,
+.project-side article > span,
 .project-end {
   font-size: 8px;
   letter-spacing: 0.15em;
@@ -585,12 +585,12 @@ a {
   margin-top: 22px;
 }
 
-.closing-right>div {
+.closing-right > div {
   border-top: 1px solid var(--line);
   padding: 23px 0;
 }
 
-.closing-right>div>span {
+.closing-right > div > span {
   font-size: 9px;
   letter-spacing: 0.14em;
   font-weight: bold;
@@ -641,7 +641,7 @@ a {
   font-size: 11px;
 }
 
-.footer-inner>span {
+.footer-inner > span {
   font-size: 8px;
   letter-spacing: 0.15em;
   color: #89958e;
@@ -758,7 +758,7 @@ a {
     font-size: 20px;
   }
 
-  .footer-inner>span {
+  .footer-inner > span {
     display: none;
   }
 }
@@ -796,16 +796,16 @@ a {
 .section-label,
 .section-link,
 .project-meta,
-.project-side article>span,
+.project-side article > span,
 .project-end,
-.closing-right>div>span,
-.footer-inner>span {
+.closing-right > div > span,
+.footer-inner > span {
   text-transform: none;
   letter-spacing: 0.03em;
   font-size: 11px;
 }
 
-.project-art>span:empty {
+.project-art > span:empty {
   display: none;
 }
 
@@ -967,21 +967,31 @@ a {
 body {
   background-color: #e6ebea;
   background-image:
-    radial-gradient(ellipse 48% 30% at 12% 8%,
+    radial-gradient(
+      ellipse 48% 30% at 12% 8%,
       rgba(169, 190, 195, 0.34),
-      transparent 72%),
-    radial-gradient(ellipse 42% 26% at 91% 19%,
+      transparent 72%
+    ),
+    radial-gradient(
+      ellipse 42% 26% at 91% 19%,
       rgba(198, 210, 209, 0.48),
-      transparent 74%),
-    radial-gradient(ellipse 52% 25% at 48% 37%,
+      transparent 74%
+    ),
+    radial-gradient(
+      ellipse 52% 25% at 48% 37%,
       rgba(241, 239, 229, 0.75),
-      transparent 72%),
-    radial-gradient(ellipse 46% 24% at 8% 66%,
+      transparent 72%
+    ),
+    radial-gradient(
+      ellipse 46% 24% at 8% 66%,
       rgba(177, 197, 199, 0.3),
-      transparent 74%),
-    radial-gradient(ellipse 50% 24% at 93% 88%,
+      transparent 74%
+    ),
+    radial-gradient(
+      ellipse 50% 24% at 93% 88%,
       rgba(189, 205, 205, 0.35),
-      transparent 72%),
+      transparent 72%
+    ),
     linear-gradient(145deg, #edf0ec 0%, #dfe8e8 48%, #f0f0e9 100%);
 }
 
@@ -991,21 +1001,31 @@ body {
   color: var(--ink);
   background-color: #495b64;
   background-image:
-    radial-gradient(ellipse 44% 22% at 8% 15%,
+    radial-gradient(
+      ellipse 44% 22% at 8% 15%,
       rgba(198, 155, 120, 0.25),
-      transparent 73%),
-    radial-gradient(ellipse 43% 20% at 88% 8%,
+      transparent 73%
+    ),
+    radial-gradient(
+      ellipse 43% 20% at 88% 8%,
       rgba(148, 161, 161, 0.23),
-      transparent 74%),
-    radial-gradient(ellipse 48% 20% at 78% 43%,
+      transparent 74%
+    ),
+    radial-gradient(
+      ellipse 48% 20% at 78% 43%,
       rgba(188, 151, 124, 0.15),
-      transparent 74%),
-    radial-gradient(ellipse 46% 22% at 4% 68%,
+      transparent 74%
+    ),
+    radial-gradient(
+      ellipse 46% 22% at 4% 68%,
       rgba(154, 168, 166, 0.18),
-      transparent 76%),
-    radial-gradient(ellipse 48% 20% at 90% 93%,
+      transparent 76%
+    ),
+    radial-gradient(
+      ellipse 48% 20% at 90% 93%,
       rgba(184, 145, 116, 0.17),
-      transparent 73%),
+      transparent 73%
+    ),
     linear-gradient(145deg, #465a64 0%, #59656a 48%, #3f545e 100%);
 }
 
@@ -1098,11 +1118,11 @@ body {
   background: #526168;
 }
 
-.closing-right>div {
+.closing-right > div {
   border-color: rgba(233, 225, 206, 0.27);
 }
 
-.closing-right>div>span,
+.closing-right > div > span,
 .closing-right h3 b {
   color: #e0c28b;
 }
@@ -1121,7 +1141,7 @@ body {
 }
 
 .footer p,
-.footer-inner>span {
+.footer-inner > span {
   color: #bec9c4;
 }
 

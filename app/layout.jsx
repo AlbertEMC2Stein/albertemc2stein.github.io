@@ -4,8 +4,8 @@ export const metadata = {
   title: "Tim Prokosch — Design study",
   description: "A personal website for mathematics, research, and software.",
   icons: {
-    icon: "/assets/images/tp-monogram.svg",
-    shortcut: "/favicon.ico",
+    icon: "/assets/images/tp-monogram.svg?v=2",
+    shortcut: "/favicon.ico?v=2",
   },
 };
 
