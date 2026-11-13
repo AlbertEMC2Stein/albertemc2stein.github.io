@@ -11,8 +11,7 @@ npm run dev
 ```
 
 Open the local URL printed by Next.js. Changes to `app/` update the preview.
-The `prototype/` folder is the earlier standalone design draft; the Next.js
-homepage is the source of truth going forward.
+The Next.js homepage in `app/` is the source of truth.
 
 ## Build and deployment
 
