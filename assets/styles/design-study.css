@@ -1,3 +1,10 @@
+/* Shared colors for the current design palette. */
+:root {
+  --dark-accent: #293d46;
+  --portrait-background: #738080;
+  --light-panel-ink: #34474d;
+}
+
 :root {
   --ink: #293b44;
   --navy: #334650;
@@ -992,16 +999,16 @@ body {
 }
 
 .portrait-frame {
-  background-color: #738080;
+  background-color: var(--portrait-background);
 }
 
 .intro-section {
   background: #d6d4c9;
-  color: #34474d;
+  color: var(--light-panel-ink);
 }
 
 .intro-body h2 {
-  color: #34474d;
+  color: var(--light-panel-ink);
 }
 
 .intro-columns .muted {
@@ -1029,7 +1036,7 @@ body {
 }
 
 .projects-section {
-  background: #293d46;
+  background: var(--dark-accent);
 }
 
 .featured-project {
@@ -1065,4 +1072,63 @@ body {
 .footer p,
 .footer-inner>span {
   color: #bec9c4;
+}
+/* Evenly distributed slate and warm-gray marbling. */
+body {
+  background-color: #536168;
+  background-image:
+    radial-gradient(ellipse 18% 7% at 89% 10%, rgba(217, 194, 166, 0.083), transparent 75%),
+    radial-gradient(ellipse 17% 6% at 96% 33%, rgba(227, 183, 145, 0.075), transparent 75%),
+    radial-gradient(ellipse 18% 7% at 83% 50%, rgba(196, 209, 196, 0.075), transparent 75%),
+    radial-gradient(ellipse 17% 7% at 97% 69%, rgba(221, 180, 145, 0.075), transparent 75%),
+    radial-gradient(ellipse 18% 7% at 79% 80%, rgba(204, 210, 190, 0.075), transparent 75%),
+    radial-gradient(ellipse 15% 5% at 9% 7%, rgba(233, 185, 144, 0.075), transparent 75%),
+    radial-gradient(ellipse 17% 6% at 48% 19%, rgba(195, 209, 199, 0.075), transparent 75%),
+    radial-gradient(ellipse 16% 5% at 94% 22%, rgba(231, 181, 140, 0.068), transparent 75%),
+    radial-gradient(ellipse 16% 6% at 16% 29%, rgba(197, 210, 199, 0.068), transparent 75%),
+    radial-gradient(ellipse 17% 5% at 69% 40%, rgba(232, 190, 147, 0.075), transparent 75%),
+    radial-gradient(ellipse 15% 6% at 38% 46%, rgba(194, 208, 200, 0.075), transparent 75%),
+    radial-gradient(ellipse 18% 6% at 93% 55%, rgba(228, 180, 138, 0.068), transparent 75%),
+    radial-gradient(ellipse 16% 6% at 18% 66%, rgba(222, 180, 146, 0.075), transparent 75%),
+    radial-gradient(ellipse 16% 5% at 56% 73%, rgba(193, 209, 200, 0.075), transparent 75%),
+    radial-gradient(ellipse 17% 6% at 88% 91%, rgba(231, 188, 147, 0.075), transparent 75%),
+    radial-gradient(ellipse 17% 5% at 45% 96%, rgba(199, 210, 196, 0.068), transparent 75%),
+    radial-gradient(ellipse 24% 12% at 15% 12%, rgba(221, 175, 137, 0.075), transparent 75%),
+    radial-gradient(ellipse 25% 12% at 70% 13%, rgba(200, 203, 184, 0.075), transparent 75%),
+    radial-gradient(ellipse 25% 12% at 37% 31%, rgba(200, 193, 172, 0.075), transparent 75%),
+    radial-gradient(ellipse 25% 12% at 88% 37%, rgba(216, 172, 140, 0.075), transparent 75%),
+    radial-gradient(ellipse 25% 12% at 14% 51%, rgba(203, 192, 168, 0.075), transparent 75%),
+    radial-gradient(ellipse 25% 12% at 67% 58%, rgba(215, 178, 146, 0.075), transparent 75%),
+    radial-gradient(ellipse 25% 12% at 33% 76%, rgba(200, 200, 178, 0.075), transparent 75%),
+    radial-gradient(ellipse 25% 12% at 86% 83%, rgba(215, 178, 143, 0.075), transparent 75%),
+    radial-gradient(ellipse 30% 14% at 17% 96%, rgba(210, 183, 155, 0.075), transparent 75%),
+    linear-gradient(145deg, #4c6069, #59666a 50%, #4b5f68);
+}
+
+/* A solid backdrop and dark frame for the portrait. */
+.portrait-frame {
+  overflow: hidden;
+  border: 8px solid var(--dark-accent);
+  background: var(--portrait-background);
+}
+
+/* Increase legibility over the marbled background. */
+:root {
+  --hero-text: #faf8ef;
+  --hero-secondary: #edf1eb;
+  --hero-accent: #ffe0a0;
+}
+
+.hero h1,
+.hero-description,
+.profile-links span {
+  color: var(--hero-text);
+}
+
+.hero .introduction {
+  color: var(--hero-secondary);
+}
+
+.hero-affiliation {
+  color: var(--hero-accent);
 }
