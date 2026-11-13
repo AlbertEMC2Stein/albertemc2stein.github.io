@@ -20,3 +20,8 @@
 .intro-body{margin-left:29%;max-width:900px}
 @media(max-width:800px){.hero{grid-template-columns:1fr;gap:35px;min-height:0;padding:65px 0 75px}.hero h1{font-size:clamp(48px,9vw,70px)}.portrait-composition{max-width:330px;margin:0}.portrait-frame{height:auto}.intro-body{margin-left:0}}
 @media(max-width:480px){.hero h1{font-size:48px}.hero-description{font-size:17px}.profile-links{gap:18px}}
+
+/* Keep the research introduction centered and headings consistent. */
+.intro-body{margin-inline:auto;text-align:center}
+.intro-columns{margin-inline:auto;text-align:left}
+.intro-body h2 em,.closing h2 em{color:inherit}
