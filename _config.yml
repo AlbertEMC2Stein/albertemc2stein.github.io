@@ -1,5 +1,10 @@
 remote_theme: saifkhichi96/simple-material
 
+# Keep the original Jekyll site together while preserving its existing routes.
+collections_dir: legacy
+layouts_dir: legacy/_layouts
+includes_dir: legacy/_includes
+
 author:                    AlbertEMC2Stein
 favicon:                   /favicon.ico
 logo:                      /assets/images/logo.png
