@@ -1,0 +1,19 @@
+{
+  "name": "tim-prokosch-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "format": "prettier --write app next.config.mjs scripts package.json .github/workflows/deploy-pages.yml",
+    "format:check": "prettier --check app next.config.mjs scripts package.json .github/workflows/deploy-pages.yml"
+  },
+  "dependencies": {
+    "next": "^16.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.0"
+  }
+}
