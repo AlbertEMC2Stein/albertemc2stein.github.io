@@ -25,3 +25,15 @@
 .intro-body{margin-inline:auto;text-align:center}
 .intro-columns{margin-inline:auto;text-align:left}
 .intro-body h2 em,.closing h2 em{color:inherit}
+
+/* Soft, static blue-gray marbling on the open page background. */
+body {
+  background-color: #e6ebea;
+  background-image:
+    radial-gradient(ellipse 48% 30% at 12% 8%, rgba(169, 190, 195, .34), transparent 72%),
+    radial-gradient(ellipse 42% 26% at 91% 19%, rgba(198, 210, 209, .48), transparent 74%),
+    radial-gradient(ellipse 52% 25% at 48% 37%, rgba(241, 239, 229, .75), transparent 72%),
+    radial-gradient(ellipse 46% 24% at 8% 66%, rgba(177, 197, 199, .30), transparent 74%),
+    radial-gradient(ellipse 50% 24% at 93% 88%, rgba(189, 205, 205, .35), transparent 72%),
+    linear-gradient(145deg, #edf0ec 0%, #dfe8e8 48%, #f0f0e9 100%);
+}
