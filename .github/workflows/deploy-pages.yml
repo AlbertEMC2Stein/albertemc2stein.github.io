@@ -25,19 +25,10 @@ jobs:
         with:
           node-version: 24
           cache: npm
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: "3.1"
-          bundler-cache: true
       - name: Install JavaScript dependencies
         run: npm ci
-      - name: Build legacy Jekyll pages
-        run: bundle exec jekyll build
       - name: Build Next.js site
         run: npm run build
-      - name: Include legacy pages
-        run: node scripts/copy-legacy.mjs
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload site
