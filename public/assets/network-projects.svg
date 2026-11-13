@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" preserveAspectRatio="none" fill="none">
+  <defs>
+    <filter id="bloom" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" />
+    </filter>
+  </defs>
+  <g stroke="#ead19b" stroke-linecap="round" stroke-width="1" stroke-opacity="0.62">
+    <path d="M-30 400 C110 385 115 270 235 290 S350 380 465 320 S590 135 700 160 S825 245 930 190" />
+    <path d="M235 290 C285 220 265 135 355 105 S490 145 535 175" />
+    <path d="M465 320 C530 360 570 430 660 395 S755 300 805 270" />
+  </g>
+  <g fill="#f3d495" fill-opacity="0.55" filter="url(#bloom)">
+    <circle cx="235" cy="290" r="11" />
+    <circle cx="355" cy="105" r="11" />
+    <circle cx="465" cy="320" r="11" />
+    <circle cx="535" cy="175" r="11" />
+    <circle cx="660" cy="395" r="11" />
+    <circle cx="700" cy="160" r="11" />
+    <circle cx="805" cy="270" r="11" />
+  </g>
+  <g fill="#f6dda7" fill-opacity="0.85">
+    <circle cx="235" cy="290" r="2.2" />
+    <circle cx="355" cy="105" r="2.2" />
+    <circle cx="465" cy="320" r="2.2" />
+    <circle cx="535" cy="175" r="2.2" />
+    <circle cx="660" cy="395" r="2.2" />
+    <circle cx="700" cy="160" r="2.2" />
+    <circle cx="805" cy="270" r="2.2" />
+  </g>
+</svg>

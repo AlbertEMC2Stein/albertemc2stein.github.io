@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 220" fill="none">
+  <defs>
+    <filter id="glow" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur stdDeviation="3" />
+    </filter>
+  </defs>
+  <g stroke="#ead19b" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M30 18V184H380" stroke-opacity="0.6" stroke-width="1" />
+    <g stroke-opacity="0.2" stroke-width="1">
+      <path d="M30 143H380M30 103H380M30 63H380" />
+    </g>
+    <g stroke-width="2.5" stroke-opacity="0.4" filter="url(#glow)">
+      <path d="M31 170L65 158L96 166L127 140L157 145L190 121L221 130L254 94L285 105L316 63L346 75L378 30" />
+      <path d="M31 170L65 166L96 149L127 155L157 136L190 144L221 122L254 132L285 115L316 124L346 103L378 99" />
+    </g>
+    <g stroke-width="1" stroke-opacity="0.85">
+      <path d="M31 170L65 158L96 166L127 140L157 145L190 121L221 130L254 94L285 105L316 63L346 75L378 30" />
+      <path d="M31 170L65 166L96 149L127 155L157 136L190 144L221 122L254 132L285 115L316 124L346 103L378 99" />
+      <path d="M31 170L65 174L96 162L127 171L157 162L190 169L221 153L254 160L285 149L316 157L346 143L378 148" stroke-opacity="0.55" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" fill="none">
+  <defs>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3" />
+    </filter>
+    <path id="curve" d="M32 202C145 201 210 197 255 174S309 105 328 28" />
+  </defs>
+  <path d="M32 20V202H340" stroke="#ead19b" stroke-opacity="0.6" />
+  <use href="#curve" stroke="#f1ce84" stroke-opacity="0.5" stroke-width="4" filter="url(#glow)" />
+  <use href="#curve" stroke="#f1ce84" stroke-opacity="0.9" stroke-width="1.3" />
+</svg>
