@@ -6,10 +6,10 @@ permalink: /index.html
 <html lang="en">
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="{{ '/assets/images/tp-monogram.svg' | relative_url }}" type="image/svg+xml">
-<link rel="alternate icon" href="{{ '/favicon.ico' | relative_url }}">
+<link rel="icon" href="{{ '/assets/images/tp-monogram.svg' | relative_url }}?v={{ site.time | date: '%s' }}" type="image/svg+xml">
+<link rel="alternate icon" href="{{ '/favicon.ico' | relative_url }}?v={{ site.time | date: '%s' }}">
 <title>Tim Prokosch — Design study</title>
-<link rel="stylesheet" href="{{ '/assets/styles/design-study.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/styles/design-study.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
 <body>
 <div class="prototype-note">DESIGN STUDY <span>·</span> Visual direction / content illustrative</div>
@@ -24,7 +24,7 @@ permalink: /index.html
     <div class="profile-links"><span>ORCID</span><span>ResearchGate</span><span>GitHub</span><span>LinkedIn</span></div>
   </div>
   <div class="portrait-composition">
-    <div class="portrait-frame"><img src="{{ '/assets/images/ProfilePicture.png' | relative_url }}" alt="Tim Prokosch"></div>
+    <div class="portrait-frame"><img src="{{ '/assets/images/ProfilePicture.png' | relative_url }}?v={{ site.time | date: '%s' }}" alt="Tim Prokosch"></div>
   </div>
 </section>
 <section class="intro-section" id="research"><div class="shell intro-grid"><div class="intro-body"><h2>Mathematics for<br><em>real-world questions</em></h2><div class="intro-columns"><p>My work brings together mathematical research, financial applications, and computational methods.</p><p class="muted">This space will bring together publications, research interests, and the ideas behind ongoing work.</p></div></div></div></section>
