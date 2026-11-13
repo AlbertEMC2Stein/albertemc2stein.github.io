@@ -2,3 +2,21 @@
 
 /* A quieter typographic treatment for the design study. */
 .introduction{font:16px Georgia,serif;color:#718080;margin:0}.brand-name small{text-transform:none;letter-spacing:.03em;font-size:10px}.hero-affiliation{text-transform:none;letter-spacing:.02em;font-size:12px;font-weight:400}.profile-links span{text-transform:none;letter-spacing:0;font-size:12px}.portrait-caption,.hero-index,.section-label,.section-link,.project-meta,.project-side article>span,.project-end,.closing-right>div>span,.footer-inner>span{text-transform:none;letter-spacing:.03em;font-size:11px}.project-art>span:empty{display:none}.section-label{color:#718080;font-weight:400}.publication-row h3{font-size:22px}.intro-body h2{margin-top:0}
+
+/* Introductory profile */
+.hero{min-height:560px;grid-template-columns:minmax(0,1fr) minmax(240px,350px);gap:10%;padding:85px 0 95px}
+.hero-copy{max-width:650px}
+.hero .introduction{font:14px/1.5 Arial,Helvetica,sans-serif;color:#73817d}
+.hero h1{font:normal clamp(52px,6vw,82px)/1.05 Georgia,serif;letter-spacing:-.045em;margin:18px 0 12px}
+.hero-affiliation{font-size:14px;color:#8b795b;margin:0}
+.hero-description{font:19px/1.65 Georgia,serif;max-width:530px;margin:32px 0;color:#53676c}
+.profile-links{margin-top:35px;gap:25px}
+.profile-links span{font-size:12px;font-weight:400;color:#344d53;border-bottom:1px solid #c9b78f;padding-bottom:5px}
+.portrait-composition{margin:0;padding:0}
+.portrait-composition:before{content:none}
+.portrait-frame{height:auto;aspect-ratio:4/5;background:#a7afb0}
+.portrait-frame img{object-position:center 25%;filter:saturate(.85)}
+.intro-grid{display:block}
+.intro-body{margin-left:29%;max-width:900px}
+@media(max-width:800px){.hero{grid-template-columns:1fr;gap:35px;min-height:0;padding:65px 0 75px}.hero h1{font-size:clamp(48px,9vw,70px)}.portrait-composition{max-width:330px;margin:0}.portrait-frame{height:auto}.intro-body{margin-left:0}}
+@media(max-width:480px){.hero h1{font-size:48px}.hero-description{font-size:17px}.profile-links{gap:18px}}
