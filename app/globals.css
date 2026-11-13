@@ -1193,20 +1193,12 @@ body::before {
 }
 
 .hero::before {
-  opacity: var(--background-glow-opacity);
-  background-image:
-    url("/assets/financial-paths.svg"), url("/assets/branching-model.svg"),
-    url("/assets/mortality-curve.svg"), url("/assets/intro-connections.svg");
-  background-size:
-    min(17vw, 210px) auto,
-    min(13vw, 160px) auto,
-    min(14vw, 175px) auto,
-    min(38vw, 470px) 90%;
-  background-position:
-    50% 8%,
-    72% 3%,
-    55% 91%,
-    62% center;
+  left: calc((100% - 100vw) / 2);
+  right: calc((100% - 100vw) / 2);
+  opacity: calc(var(--background-glow-opacity) * 0.7);
+  background-image: url("/assets/gbm-trajectories.svg?v=4096-fine");
+  background-size: 4096px 700px;
+  background-position: left bottom;
 }
 
 .intro-section::before,
@@ -1246,21 +1238,6 @@ body::before {
   background-image: url("/assets/network-footer-wide.svg");
   background-position: center;
   background-size: 100% 100%;
-}
-
-@media (max-width: 800px) {
-  .hero::before {
-    background-size:
-      32vw auto,
-      26vw auto,
-      27vw auto,
-      55vw 55%;
-    background-position:
-      100% 5%,
-      82% 48%,
-      100% 91%,
-      100% center;
-  }
 }
 
 /* A solid backdrop and dark frame for the portrait. */
