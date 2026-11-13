@@ -6,12 +6,12 @@
   "background_color": "#170d0d",
   "display": "standalone",
   "icons": [{
-      "src": "/assets/images/icons/192.png",
+      "src": "/legacy/assets/images/icons/192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/assets/images/icons/256.png",
+      "src": "/legacy/assets/images/icons/256.png",
       "type": "image/png",
       "sizes": "256x256"
     }

@@ -7,7 +7,7 @@ includes_dir: legacy/_includes
 
 author:                    AlbertEMC2Stein
 favicon:                   /favicon.ico
-logo:                      /assets/images/logo.png
+logo:                      /legacy/assets/images/logo.png
 
 # -----------------------------------------------------------------------------
 # Site Navigation
