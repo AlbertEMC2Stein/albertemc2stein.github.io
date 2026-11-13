@@ -4,7 +4,8 @@
   --marble-base: #536168;
   --marble-tint: #293d46;
   --marble-opacity: 0.25;
-  --portrait-background: var(--marble-base);
+  --portrait-background: var(--paper);
+  --portrait-border: var(--hero-accent);
   --light-panel-ink: #34474d;
   --ink: #eee9dc;
   --navy: #435660;
@@ -213,7 +214,8 @@ a {
 
 .portrait-frame {
   height: 420px;
-  background: #a7afb0;
+  background: var(--portrait-background);
+  border: 1px solid var(--portrait-border);
   position: relative;
   overflow: hidden;
 }
@@ -1147,7 +1149,7 @@ body::before {
 /* A solid backdrop and dark frame for the portrait. */
 .portrait-frame {
   overflow: hidden;
-  border: 4px solid var(--dark-accent);
+  border: 2px solid var(--portrait-border);
   background: var(--portrait-background);
 }
 
