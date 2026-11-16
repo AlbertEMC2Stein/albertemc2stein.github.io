@@ -1699,3 +1699,80 @@ body::before {
     gap: 8px;
   }
 }
+
+/* Featured project and direct links to the simulator and source. */
+.project-feature {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+}
+
+.project-feature .project-art {
+  height: auto;
+  min-height: 350px;
+}
+
+.project-feature .project-art svg {
+  top: 12%;
+  height: 76%;
+}
+
+.project-feature .project-content {
+  padding: clamp(30px, 4vw, 60px);
+}
+
+.project-feature h3 {
+  max-width: 480px;
+  font-size: clamp(30px, 3vw, 45px);
+}
+
+.project-feature .project-feature__summary {
+  color: var(--hero-text);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.project-feature__tags,
+.project-feature__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.project-feature__links {
+  gap: 16px 24px;
+  margin-top: 28px;
+}
+
+.project-feature__links a,
+.project-github {
+  color: var(--hero-text);
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 5px;
+  font-size: 13px;
+}
+
+.project-feature__links a:hover,
+.project-github:hover {
+  color: var(--hero-accent);
+}
+
+.project-feature__links a:focus-visible,
+.project-github:focus-visible {
+  outline: 2px solid var(--hero-accent);
+  outline-offset: 5px;
+}
+
+.project-github {
+  display: inline-block;
+  margin-top: 32px;
+}
+
+@media (max-width: 800px) {
+  .project-feature {
+    grid-template-columns: 1fr;
+  }
+
+  .project-feature .project-art {
+    min-height: 210px;
+  }
+}

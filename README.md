@@ -21,6 +21,11 @@ Update `app/data/profile.json` for the introduction and profile links. Update
 in the files. Event status uses the start and end dates to identify upcoming or
 in-progress events in the visitor's local time.
 
+## Editing projects
+
+Update `app/data/projects.json` to change the featured project descriptions,
+topics, and links. The pension simulator is deployed independently.
+
 ## Editing research and citations
 
 Update `app/data/publications.json` to add or edit research entries. Mark an

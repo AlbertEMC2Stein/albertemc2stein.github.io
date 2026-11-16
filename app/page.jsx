@@ -4,6 +4,7 @@ import PublicationList from "./components/PublicationList";
 import SiteHeader from "./components/SiteHeader";
 import profile from "./data/profile.json";
 import publications from "./data/publications.json";
+import projects from "./data/projects.json";
 
 export default function Home() {
   return (
@@ -76,56 +77,51 @@ export default function Home() {
                 <h2>Selected projects</h2>
               </div>
             </div>
-            <div className="project-grid">
-              <article className="featured-project">
+            {projects.map((project) => (
+              <article
+                className="featured-project project-feature"
+                key={project.id}
+              >
                 <div className="project-art" aria-hidden="true">
                   <div className="chart-grid"></div>
                   <svg viewBox="0 0 600 250" preserveAspectRatio="none">
                     <path d="M0 210 C80 195 100 170 165 180 S260 120 320 130 S420 84 470 78 S550 35 600 25" />
                     <path d="M0 215 C70 190 120 210 190 165 S260 168 330 127 S450 140 510 93 S570 94 600 70" />
                   </svg>
-                  <span></span>
                 </div>
                 <div className="project-content">
                   <div className="project-meta">
-                    <span>Financial mathematics</span>
+                    <span>{project.category}</span>
                   </div>
-                  <h3>
-                    Pension Funding
-                    <br />
-                    Simulator <span>↗</span>
-                  </h3>
-                  <p>
-                    A computational project exploring pension funding and
-                    financial scenarios.
-                  </p>
-                  <span className="project-tag">Interactive tool</span>
+                  <h3>{project.title}</h3>
+                  <p className="project-feature__summary">{project.summary}</p>
+                  <p>{project.description}</p>
+                  <div
+                    className="project-feature__tags"
+                    aria-label="Project topics"
+                  >
+                    {project.tags.map((tag) => (
+                      <span className="project-tag" key={tag}>
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <div className="project-feature__links">
+                    {project.links.map((link) => (
+                      <a href={link.url} key={link.url}>
+                        {link.label} <span aria-hidden="true">↗</span>
+                      </a>
+                    ))}
+                  </div>
                 </div>
               </article>
-              <div className="project-side">
-                <article>
-                  <span>Research software</span>
-                  <h3>
-                    Physics-informed
-                    <br />
-                    neural networks <b>↗</b>
-                  </h3>
-                  <p>Neural networks for differential equations.</p>
-                </article>
-                <article>
-                  <span>Simulation</span>
-                  <h3>
-                    Contact network
-                    <br />
-                    simulator <b>↗</b>
-                  </h3>
-                  <p>Exploring the spread of infectious diseases.</p>
-                </article>
-                <div className="project-end">
-                  More on GitHub <span>↗</span>
-                </div>
-              </div>
-            </div>
+            ))}
+            <a
+              className="project-github"
+              href="https://github.com/AlbertEMC2Stein?tab=repositories"
+            >
+              Browse all repositories <span aria-hidden="true">↗</span>
+            </a>
           </div>
         </section>
         <section className="closing shell" id="cv">
