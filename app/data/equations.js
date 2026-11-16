@@ -1,0 +1,21 @@
+// Decorative formulas for the dark panels. Edit or add LaTeX strings here.
+export const equations = [
+  String.raw`\mathrm{d}S_t = \mu S_t\,\mathrm{d}t + \sigma S_t\,\mathrm{d}W_t`,
+  String.raw`\mathbb{E}[X] = \int_{-\infty}^{\infty} x f_X(x)\,\mathrm{d}x`,
+  String.raw`S_t = S_0 \mathrm{e}^{(\mu-\frac{\sigma^2}{2})t+\sigma W_t}`,
+  String.raw`\mu(x) = A + B \mathrm{e}^{cx}`,
+  String.raw`\frac{\partial V}{\partial t} + \mathcal{L}V = 0`,
+  String.raw`\mathrm{Var}(X) = \mathbb{E}[(X-\mathbb{E}[X])^2]`,
+  String.raw`P(t,T) = \mathbb{E}^{\mathbb{Q}}\!\left[\mathrm{e}^{-\int_t^T r_s\,\mathrm{d}s}\right]`,
+  String.raw`\hat{\theta} = \underset{\theta}{\operatorname{argmin}}\; L(\theta)`,
+  String.raw`\mathbb{P}(T_x > t) = {}_tp_x`,
+  String.raw`\nabla f(x) = \left(\frac{\partial f}{\partial x_i}\right)_{i=1}^n`,
+  String.raw`\int_0^T \mathrm{e}^{-rt}\,\mathrm{d}t = \frac{1-\mathrm{e}^{-rT}}{r}`,
+  String.raw`\sum_{i=1}^{n} w_i = 1`,
+  String.raw`\frac{\partial V}{\partial t} + \frac{1}{2}\sigma^2 S^2\frac{\partial^2 V}{\partial S^2} + rS\frac{\partial V}{\partial S} - rV = 0`,
+  String.raw`V_t = \mathbb{E}^{\mathbb Q}\!\left[\mathrm{e}^{-r(T-t)}H \mid \mathcal F_t\right]`,
+  String.raw`{}_tp_x = \mathrm{e}^{-\int_0^t \mu(x+s)\,\mathrm{d}s}`,
+  String.raw`\bar a_x = \int_0^\infty \mathrm{e}^{-\delta t}\,{}_tp_x\,\mathrm{d}t`,
+  String.raw`\mathrm{d}f(t,X_t) = \left(f_t + \mu f_x + \frac{1}{2}\sigma^2 f_{xx}\right)\mathrm{d}t + \sigma f_x\,\mathrm{d}W_t`,
+  String.raw`\max_{\boldsymbol w}\left(\boldsymbol w^\top\boldsymbol\mu - \frac{\gamma}{2}\boldsymbol w^\top\Sigma\boldsymbol w\right)`,
+];

@@ -1,3 +1,6 @@
+import BackgroundCanvas from "./components/BackgroundCanvas";
+import FormulaBackground from "./components/FormulaBackground";
+
 export default function Home() {
   return (
     <>
@@ -22,6 +25,7 @@ export default function Home() {
       </header>
       <main id="top">
         <section className="hero shell" id="about">
+          <BackgroundCanvas kind="gbm" fullBleed />
           <div className="hero-copy">
             <p className="introduction">Mathematician and researcher</p>
             <h1>Tim Prokosch</h1>
@@ -65,6 +69,7 @@ export default function Home() {
           </div>
         </section>
         <section className="publications shell">
+          <BackgroundCanvas kind="network-publications" fullBleed />
           <div className="section-heading">
             <div>
               <h2>Publications</h2>
@@ -96,6 +101,7 @@ export default function Home() {
           </p>
         </section>
         <section className="projects-section" id="projects">
+          <FormulaBackground />
           <div className="shell">
             <div className="section-heading light-heading">
               <div>
@@ -155,6 +161,7 @@ export default function Home() {
           </div>
         </section>
         <section className="closing shell" id="cv">
+          <BackgroundCanvas kind="network-background" fullBleed />
           <div>
             <h2>
               Background and
@@ -181,6 +188,7 @@ export default function Home() {
         </section>
       </main>
       <footer className="footer">
+        <FormulaBackground count={2} />
         <div className="shell footer-inner">
           <div>
             <span className="footer-name">Tim Prokosch</span>

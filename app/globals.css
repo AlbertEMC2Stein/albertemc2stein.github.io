@@ -5,6 +5,7 @@
   --marble-tint: #293d46;
   --marble-opacity: 0.25;
   --background-glow-opacity: 0.32;
+  --formula-opacity: 0.15;
   --portrait-background: var(--paper);
   --portrait-border: var(--hero-accent);
   --light-panel-ink: #34474d;
@@ -1167,7 +1168,24 @@ body::before {
   mask-repeat: repeat;
 }
 
-/* Financial diagrams belong to the introduction; other sections use a network. */
+/* Empty, non-interactive drawing surfaces for the future backgrounds. */
+.background-canvas {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.background-canvas--full-bleed {
+  left: calc((100% - 100vw) / 2);
+  right: calc((100% - 100vw) / 2);
+  width: 100vw;
+}
+
+/* The introduction uses GBM; marbled content sections use networks. */
 .hero,
 .intro-section,
 .publications,
@@ -1211,6 +1229,18 @@ body::before {
   background-size: 100% 100%;
 }
 
+/* Keep static artwork as a fallback until a sketch draws its first frame. */
+:where(
+    .hero,
+    .intro-section,
+    .publications,
+    .projects-section,
+    .closing,
+    .footer
+  ):has(> .background-canvas[data-animation-active="true"])::before {
+  background-image: none;
+}
+
 /* Extend the inset content sections' artwork to the viewport edges. */
 .publications::before,
 .closing::before {
@@ -1218,26 +1248,94 @@ body::before {
   right: calc((100% - 100vw) / 2);
 }
 
-.intro-section::before {
-  background-image: url("/assets/network-research.svg");
-}
-
 .publications::before {
   background-image: url("/assets/network-publications.svg");
-}
-
-.projects-section::before {
-  background-image: url("/assets/network-projects.svg");
 }
 
 .closing::before {
   background-image: url("/assets/network-background.svg");
 }
 
-.footer::before {
-  background-image: url("/assets/network-footer-wide.svg");
-  background-position: center;
-  background-size: 100% 100%;
+/* Decorative formulas remain behind the content and do not receive input. */
+.formula-background {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Measure KaTeX with the same typography before placing visible formulas. */
+.formula-background__measure {
+  position: absolute;
+  visibility: hidden;
+  font-size: clamp(0.8rem, 1.15vw, 1.1rem);
+  white-space: nowrap;
+}
+
+.formula-background__measure > span {
+  display: block;
+  width: max-content;
+}
+
+.formula-background__item {
+  position: absolute;
+  color: var(--hero-accent);
+  font-size: clamp(0.8rem, 1.15vw, 1.1rem);
+  white-space: nowrap;
+  opacity: 0;
+  text-shadow:
+    0 0 7px var(--gold),
+    0 0 20px var(--gold);
+  animation: formula-appearance 18s ease-in-out infinite;
+  animation-play-state: paused;
+}
+
+.formula-background__content {
+  display: inline-block;
+  animation: formula-drift 18s ease-in-out infinite alternate;
+  animation-duration: inherit;
+  animation-delay: inherit;
+  animation-play-state: paused;
+}
+
+.formula-background[data-visible="true"] .formula-background__item,
+.formula-background[data-visible="true"] .formula-background__content {
+  animation-play-state: running;
+}
+
+@keyframes formula-drift {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+  }
+
+  to {
+    transform: translate(var(--formula-drift-x), var(--formula-drift-y))
+      rotate(var(--formula-rotation));
+  }
+}
+
+@keyframes formula-appearance {
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  20%,
+  75% {
+    opacity: var(--formula-opacity);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .formula-background__item {
+    animation: none;
+    opacity: var(--formula-opacity);
+  }
+
+  .formula-background__content {
+    animation: none;
+  }
 }
 
 /* A solid backdrop and dark frame for the portrait. */

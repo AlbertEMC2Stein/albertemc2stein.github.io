@@ -9,7 +9,9 @@
     "format:check": "prettier --check app next.config.mjs scripts package.json .github/workflows/deploy-pages.yml"
   },
   "dependencies": {
+    "katex": "^0.19.1",
     "next": "^16.0.0",
+    "p5": "^2.4.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
