@@ -16,8 +16,10 @@ The Next.js homepage in `app/` is the source of truth.
 ## Editing profile and CV content
 
 Update `app/data/profile.json` for the introduction and profile links. Update
-`app/data/cv.json` for experience, education, and languages. Entries appear in
-the order listed in the files.
+`app/data/cv.json` for experience, education, and languages, and
+`app/data/events.json` for talks and events. Entries appear in the order listed
+in the files. Event status uses the start and end dates to identify upcoming or
+in-progress events in the visitor's local time.
 
 ## Build and deployment
 

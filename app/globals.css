@@ -1474,6 +1474,20 @@ body::before {
   margin-top: 8px;
 }
 
+.cv-event-role {
+  margin: 0 0 8px;
+  color: var(--hero-accent);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.cv-event-status {
+  display: block;
+  margin-top: 5px;
+  color: var(--hero-accent);
+  font-size: 12px;
+}
+
 .cv-languages li {
   display: flex;
   justify-content: space-between;

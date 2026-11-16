@@ -1,6 +1,8 @@
 import BackgroundCanvas from "../components/BackgroundCanvas";
+import EventStatus from "../components/EventStatus";
 import SiteHeader from "../components/SiteHeader";
 import cv from "../data/cv.json";
+import events from "../data/events.json";
 import profile from "../data/profile.json";
 
 export const metadata = {
@@ -30,6 +32,35 @@ function Timeline({ title, entries }) {
   );
 }
 
+function Events() {
+  return (
+    <section className="cv-group" aria-labelledby="events">
+      <h2 id="events">Talks &amp; events</h2>
+      <ol className="cv-timeline">
+        {events.map((event) => (
+          <li className="cv-entry" key={`${event.startDate}-${event.title}`}>
+            <p className="cv-period">
+              <time dateTime={event.startDate}>{event.period}</time>
+              <EventStatus
+                startDate={event.startDate}
+                endDate={event.endDate}
+              />
+            </p>
+            <div>
+              <p className="cv-event-role">{event.role}</p>
+              <h3>{event.title}</h3>
+              {event.location && (
+                <p className="cv-organisation">{event.location}</p>
+              )}
+              {event.detail && <p className="cv-detail">{event.detail}</p>}
+            </div>
+          </li>
+        ))}
+      </ol>
+    </section>
+  );
+}
+
 export default function CvPage() {
   return (
     <>
@@ -39,11 +70,12 @@ export default function CvPage() {
         <div className="cv-intro">
           <p className="cv-eyebrow">{profile.name}</p>
           <h1>Curriculum vitae</h1>
-          <p>Education and professional experience</p>
+          <p>Education, professional experience, and events</p>
         </div>
         <div className="cv-content">
           <Timeline title="Experience" entries={cv.experience} />
           <Timeline title="Education" entries={cv.education} />
+          <Events />
           <section className="cv-group" aria-labelledby="languages">
             <h2 id="languages">Languages</h2>
             <ul className="cv-languages">

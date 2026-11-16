@@ -1,0 +1,50 @@
+[
+  {
+    "title": "PARTY Winter School",
+    "period": "24–29 January 2027",
+    "startDate": "2027-01-24",
+    "endDate": "2027-01-29",
+    "location": "Pesaro, Italy",
+    "role": "Planned presentation on pension funding research"
+  },
+  {
+    "title": "Future Minds x Allianz in Deutschland",
+    "period": "26–27 November 2026",
+    "startDate": "2026-11-26",
+    "endDate": "2026-11-27",
+    "location": "Allianz career event",
+    "role": "Accepted to attend"
+  },
+  {
+    "title": "7th EAJ Conference",
+    "period": "9–11 September 2026",
+    "startDate": "2026-09-09",
+    "endDate": "2026-09-11",
+    "location": "Istanbul, Türkiye",
+    "role": "Participant"
+  },
+  {
+    "title": "37th International Summer School of the Swiss Association of Actuaries (ASA / SAA)",
+    "period": "10–14 August 2026",
+    "startDate": "2026-08-10",
+    "endDate": "2026-08-14",
+    "role": "Co-organizer"
+  },
+  {
+    "title": "Extending Entropic Learning Beyond Axis Aligned Features — A Novel Approach for Feature Extraction in Complex Data",
+    "period": "21 August 2024",
+    "startDate": "2024-08-21",
+    "endDate": "2024-08-21",
+    "location": "AG Café, Freie Universität Berlin",
+    "role": "Invited talk",
+    "detail": "Invited by Rupert Klein"
+  },
+  {
+    "title": "Mathematics of Entropic AI in the Natural Sciences Workshop",
+    "period": "7–12 April 2024",
+    "startDate": "2024-04-07",
+    "endDate": "2024-04-12",
+    "location": "Oberwolfach, Germany",
+    "role": "Participant"
+  }
+]
