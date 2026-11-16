@@ -1360,3 +1360,157 @@ body::before {
 .hero-affiliation {
   color: var(--hero-accent);
 }
+
+/* Profile links and the standalone CV. */
+.profile-links a {
+  color: var(--hero-text);
+  font-size: 12px;
+  font-weight: 400;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 5px;
+}
+
+.profile-links a:hover,
+.closing-link:hover,
+.cv-back:hover {
+  color: var(--hero-accent);
+}
+
+.profile-links a:focus-visible,
+.closing-link:focus-visible,
+.cv-back:focus-visible,
+.header a:focus-visible {
+  outline: 2px solid var(--hero-accent);
+  outline-offset: 5px;
+}
+
+.cv-page {
+  position: relative;
+  isolation: isolate;
+  padding-block: clamp(70px, 9vw, 120px);
+}
+
+.cv-intro {
+  max-width: 800px;
+  margin-bottom: 80px;
+}
+
+.cv-eyebrow {
+  color: var(--hero-accent);
+  font-size: 14px;
+}
+
+.cv-intro h1 {
+  margin: 20px 0;
+  font:
+    normal clamp(48px, 6vw, 82px) / 1.05 Georgia,
+    serif;
+  letter-spacing: -0.045em;
+}
+
+.cv-intro > p:last-child {
+  color: var(--hero-secondary);
+  font:
+    18px / 1.6 Georgia,
+    serif;
+}
+
+.cv-content {
+  max-width: 1050px;
+}
+
+.cv-group {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.65fr) minmax(0, 2fr);
+  gap: 2rem;
+  margin-bottom: 75px;
+}
+
+.cv-group h2 {
+  margin: 0;
+  font:
+    normal 26px / 1.2 Georgia,
+    serif;
+  color: var(--hero-accent);
+}
+
+.cv-timeline,
+.cv-languages {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cv-entry {
+  display: grid;
+  grid-template-columns: minmax(160px, 0.85fr) minmax(0, 1.5fr);
+  gap: 1.5rem;
+  padding: 22px 0;
+  border-top: 1px solid var(--line);
+}
+
+.cv-entry:last-child,
+.cv-languages li:last-child {
+  border-bottom: 1px solid var(--line);
+}
+
+.cv-period,
+.cv-organisation,
+.cv-detail {
+  margin: 0;
+  color: var(--hero-secondary);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.cv-entry h3 {
+  margin: 0 0 8px;
+  font:
+    normal 22px / 1.25 Georgia,
+    serif;
+}
+
+.cv-detail {
+  margin-top: 8px;
+}
+
+.cv-languages li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+  font-size: 14px;
+}
+
+.cv-languages li span:last-child {
+  color: var(--hero-secondary);
+}
+
+.cv-back {
+  display: inline-block;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 6px;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  .cv-intro {
+    margin-bottom: 55px;
+  }
+
+  .cv-group {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 55px;
+  }
+
+  .cv-entry {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .header nav a:last-child {
+    display: inline;
+  }
+}

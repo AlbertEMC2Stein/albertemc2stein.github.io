@@ -1,0 +1,22 @@
+{
+  "name": "Tim Prokosch",
+  "title": "Mathematician and researcher",
+  "affiliation": "RPTU Kaiserslautern-Landau",
+  "introduction": "I am a doctoral researcher and research associate at RPTU Kaiserslautern-Landau, with a background in mathematics and web development.",
+  "about": [
+    "I am pursuing a doctorate in mathematics under the supervision of Prof. Dr. Ralf Korn. My interests include financial mathematics and computational approaches to mathematical problems.",
+    "Alongside my academic work, I develop software for the web. I enjoy working between mathematical ideas and their implementation."
+  ],
+  "links": [
+    { "label": "ORCID", "url": "https://orcid.org/0009-0000-0576-6417" },
+    {
+      "label": "ResearchGate",
+      "url": "https://www.researchgate.net/profile/Tim-Prokosch"
+    },
+    { "label": "GitHub", "url": "https://github.com/AlbertEMC2Stein" },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/tim-prokosch-27b999361/"
+    }
+  ]
+}

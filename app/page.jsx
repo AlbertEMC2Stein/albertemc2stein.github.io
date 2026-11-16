@@ -1,5 +1,7 @@
 import BackgroundCanvas from "./components/BackgroundCanvas";
 import FormulaBackground from "./components/FormulaBackground";
+import SiteHeader from "./components/SiteHeader";
+import profile from "./data/profile.json";
 
 export default function Home() {
   return (
@@ -7,38 +9,24 @@ export default function Home() {
       <div className="prototype-note">
         DESIGN STUDY <span>·</span> Visual direction / content illustrative
       </div>
-      <header className="header shell">
-        <a className="brand" href="#top">
-          <span className="brand-symbol">
-            T<span>P</span>
-          </span>
-          <span className="brand-name">
-            Tim Prokosch<small>Personal website</small>
-          </span>
-        </a>
-        <nav aria-label="Preview navigation">
-          <a href="#about">About</a>
-          <a href="#research">Research</a>
-          <a href="#projects">Projects</a>
-          <a href="#cv">CV</a>
-        </nav>
-      </header>
+      <SiteHeader />
       <main id="top">
         <section className="hero shell" id="about">
           <BackgroundCanvas kind="gbm" fullBleed />
           <div className="hero-copy">
-            <p className="introduction">Mathematician and researcher</p>
-            <h1>Tim Prokosch</h1>
-            <p className="hero-affiliation">RPTU Kaiserslautern-Landau</p>
-            <p className="hero-description">
-              I work at the intersection of mathematics, finance, and
-              computation, exploring questions through research and software.
-            </p>
-            <div className="profile-links">
-              <span>ORCID</span>
-              <span>ResearchGate</span>
-              <span>GitHub</span>
-              <span>LinkedIn</span>
+            <p className="introduction">{profile.title}</p>
+            <h1>{profile.name}</h1>
+            <p className="hero-affiliation">{profile.affiliation}</p>
+            <p className="hero-description">{profile.introduction}</p>
+            <div
+              className="profile-links"
+              aria-label="Academic and professional profiles"
+            >
+              {profile.links.map((link) => (
+                <a href={link.url} key={link.label}>
+                  {link.label}
+                </a>
+              ))}
             </div>
           </div>
           <div className="portrait-composition">
@@ -56,14 +44,9 @@ export default function Home() {
                 <em>real-world questions</em>
               </h2>
               <div className="intro-columns">
-                <p>
-                  My work brings together mathematical research, financial
-                  applications, and computational methods.
-                </p>
-                <p className="muted">
-                  This space will bring together publications, research
-                  interests, and the ideas behind ongoing work.
-                </p>
+                {profile.about.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
               </div>
             </div>
           </div>
@@ -173,7 +156,9 @@ export default function Home() {
             <div>
               <span>Background</span>
               <h3>
-                Experience &amp; education <b>↗</b>
+                <a className="closing-link" href="/cv/">
+                  Experience &amp; education <b>↗</b>
+                </a>
               </h3>
               <p>A closer look at my academic and professional background.</p>
             </div>

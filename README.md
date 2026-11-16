@@ -13,6 +13,12 @@ npm run dev
 Open the local URL printed by Next.js. Changes to `app/` update the preview.
 The Next.js homepage in `app/` is the source of truth.
 
+## Editing profile and CV content
+
+Update `app/data/profile.json` for the introduction and profile links. Update
+`app/data/cv.json` for experience, education, and languages. Entries appear in
+the order listed in the files.
+
 ## Build and deployment
 
 ```sh
