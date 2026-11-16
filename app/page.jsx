@@ -1,7 +1,9 @@
 import BackgroundCanvas from "./components/BackgroundCanvas";
 import FormulaBackground from "./components/FormulaBackground";
+import PublicationList from "./components/PublicationList";
 import SiteHeader from "./components/SiteHeader";
 import profile from "./data/profile.json";
+import publications from "./data/publications.json";
 
 export default function Home() {
   return (
@@ -35,7 +37,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="intro-section" id="research">
+        <section className="intro-section" aria-label="About">
           <div className="shell intro-grid">
             <div className="intro-body">
               <h2>
@@ -51,37 +53,20 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="publications shell">
+        <section
+          className="publications shell"
+          aria-labelledby="selected-research"
+        >
           <BackgroundCanvas kind="network-publications" fullBleed />
           <div className="section-heading">
-            <div>
-              <h2>Publications</h2>
-            </div>
-            <span className="section-link">
-              View all research <span>↗</span>
-            </span>
+            <h2 id="selected-research">Research</h2>
+            <a className="section-link" href="/research/">
+              View all research <span aria-hidden="true">↗</span>
+            </a>
           </div>
-          <div className="publication-row">
-            <span className="pub-year">YEAR</span>
-            <div>
-              <span className="placeholder-label">Publication placeholder</span>
-              <h3>Publication title and research context</h3>
-              <p>Authors · Journal or conference · Year</p>
-            </div>
-            <span className="expand">+</span>
-          </div>
-          <div className="publication-row">
-            <span className="pub-year">YEAR</span>
-            <div>
-              <span className="placeholder-label">Publication placeholder</span>
-              <h3>Another selected publication</h3>
-              <p>Authors · Journal or conference · Year</p>
-            </div>
-            <span className="expand">+</span>
-          </div>
-          <p className="section-footnote">
-            Abstracts and full-text links will find their place here.
-          </p>
+          <PublicationList
+            publications={publications.filter((work) => work.featured)}
+          />
         </section>
         <section className="projects-section" id="projects">
           <FormulaBackground />

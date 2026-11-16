@@ -21,6 +21,14 @@ Update `app/data/profile.json` for the introduction and profile links. Update
 in the files. Event status uses the start and end dates to identify upcoming or
 in-progress events in the visitor's local time.
 
+## Editing research and citations
+
+Update `app/data/publications.json` to add or edit research entries. Mark an
+entry `featured: true` to include it on the homepage. Each citation's `type`,
+`key`, and `fields` generate both the displayed and downloadable BibTeX.
+Research summaries are paraphrases; source and full-text links are listed per
+entry. Entries appear in the order given in the file.
+
 ## Build and deployment
 
 ```sh

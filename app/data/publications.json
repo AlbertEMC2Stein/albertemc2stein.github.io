@@ -1,0 +1,191 @@
+[
+  {
+    "id": "ik-gat-paper",
+    "type": "Research article",
+    "year": "2026",
+    "featured": true,
+    "title": "Amortized Inverse Kinematics via Graph Attention for Real-Time Human Avatar Animation",
+    "authors": [
+      {
+        "name": "Muhammad Saif Ullah Khan",
+        "url": "https://www.saifkhichi.com/"
+      },
+      {
+        "name": "Chen-Yu Wang"
+      },
+      {
+        "name": "Tim Prokosch"
+      },
+      {
+        "name": "Michael Lorenz"
+      },
+      {
+        "name": "Bertram Taetz"
+      },
+      {
+        "name": "Didier Stricker"
+      }
+    ],
+    "venue": "Open Research Europe, version 1",
+    "summary": "A graph-attention model for recovering animation-ready joint rotations from 3D joint positions.",
+    "abstract": "IK-GAT uses the skeletal hierarchy to infer bone-aligned world rotations from 3D joint positions in a single pass. These are converted analytically to parent-relative local rotations for animation rigs. The study evaluates the approach on standardized body-model and production-rig benchmarks, including robustness to noisy inputs.",
+    "links": [
+      {
+        "label": "arXiv",
+        "url": "https://arxiv.org/abs/2604.16629"
+      },
+      {
+        "label": "Full text",
+        "url": "https://arxiv.org/html/2604.16629"
+      },
+      {
+        "label": "Open Research Europe",
+        "url": "https://doi.org/10.12688/openreseurope.24416.1"
+      },
+      {
+        "label": "Project page",
+        "url": "https://www.saifkhichi.com/research/neural-inverse-kinematics/"
+      }
+    ],
+    "related": {
+      "label": "Related SCA poster",
+      "url": "/research/#ik-gat-poster"
+    },
+    "citation": {
+      "type": "article",
+      "key": "khan2026amortized",
+      "fields": {
+        "title": "{Amortized Inverse Kinematics via Graph Attention for Real-Time Human Avatar Animation}",
+        "author": "Khan, Muhammad Saif Ullah and Wang, Chen-Yu and Prokosch, Tim and Lorenz, Michael and Taetz, Bertram and Stricker, Didier",
+        "journal": "Open Research Europe",
+        "year": "2026",
+        "volume": "6",
+        "doi": "10.12688/openreseurope.24416.1",
+        "url": "https://doi.org/10.12688/openreseurope.24416.1",
+        "number": "314"
+      }
+    }
+  },
+  {
+    "id": "ik-gat-poster",
+    "type": "Conference poster",
+    "year": "2026",
+    "featured": false,
+    "title": "Dense Orientation Recovery via Lightweight Graph Attention for Real-Time Avatar Animation from Markerless Tracking",
+    "authors": [
+      {
+        "name": "Muhammad Saif Ullah Khan",
+        "url": "https://www.saifkhichi.com/"
+      },
+      {
+        "name": "Chen-Yu Wang"
+      },
+      {
+        "name": "Tim Prokosch"
+      },
+      {
+        "name": "Michael Lorenz"
+      },
+      {
+        "name": "Bertram Taetz"
+      },
+      {
+        "name": "Didier Stricker"
+      }
+    ],
+    "venue": "ACM SIGGRAPH / Eurographics Symposium on Computer Animation (SCA 2026), Posters",
+    "summary": "A poster presentation of the related IK-GAT work on real-time orientation recovery.",
+    "abstract": "This poster presents IK-GAT for estimating full-body joint orientations from tracked 3D joint positions. It combines skeletal graph attention with a bone-aligned rotation representation and reports results on AMASS and an Unreal Engine mannequin benchmark.",
+    "links": [
+      {
+        "label": "Poster abstract",
+        "url": "https://doi.org/10.2312/sca.20261002"
+      },
+      {
+        "label": "DFKI record",
+        "url": "https://av.dfki.de/publications/dense-orientation-recovery-via-lightweight-graph-attention-for-real-time-avatar-animation-from-markerless-tracking/"
+      }
+    ],
+    "related": {
+      "label": "Related IK-GAT article",
+      "url": "/research/#ik-gat-paper"
+    },
+    "citation": {
+      "type": "inproceedings",
+      "key": "khan2026dense",
+      "fields": {
+        "title": "{Dense Orientation Recovery via Lightweight Graph Attention for Real-Time Avatar Animation from Markerless Tracking}",
+        "author": "Khan, Muhammad Saif Ullah and Wang, Chen-Yu and Prokosch, Tim and Lorenz, Michael and Taetz, Bertram and Stricker, Didier",
+        "booktitle": "SCA 2026: ACM SIGGRAPH / Eurographics Symposium on Computer Animation - Posters",
+        "year": "2026",
+        "publisher": "The Eurographics Association",
+        "doi": "10.2312/sca.20261002",
+        "url": "https://doi.org/10.2312/sca.20261002"
+      }
+    }
+  },
+  {
+    "id": "masters-thesis",
+    "type": "Master’s thesis",
+    "year": "2024",
+    "featured": true,
+    "title": "Entropic Sparse Learning Utilising Reconstruction on Affine Subspaces",
+    "authors": [
+      {
+        "name": "Tim Prokosch"
+      }
+    ],
+    "venue": "RPTU Kaiserslautern-Landau",
+    "summary": "Extensions of entropic learning using cluster-dependent rotations and reconstructive subspaces.",
+    "abstract": "The thesis develops CReSPA and eSPARS to address limitations of axis-aligned feature extraction and clustering. It compares the methods with eSPA on synthetic and real-world data, exploring classification quality, computational cost, and model complexity. The reported results indicate that eSPARS can achieve comparable or improved classification performance, while CReSPA did not yet outperform the baseline overall.",
+    "links": [
+      {
+        "label": "ResearchGate",
+        "url": "https://www.researchgate.net/publication/408719671_Entropic_Sparse_Learning_Utilising_Reconstruction_on_Affine_Subspaces"
+      }
+    ],
+    "citation": {
+      "type": "mastersthesis",
+      "key": "prokosch2024entropic",
+      "fields": {
+        "title": "{Entropic Sparse Learning Utilising Reconstruction on Affine Subspaces}",
+        "author": "Prokosch, Tim",
+        "school": "RPTU Kaiserslautern-Landau",
+        "year": "2024",
+        "url": "https://www.researchgate.net/publication/408719671_Entropic_Sparse_Learning_Utilising_Reconstruction_on_Affine_Subspaces"
+      }
+    }
+  },
+  {
+    "id": "bachelors-thesis",
+    "type": "Bachelor’s thesis",
+    "year": "2022",
+    "featured": true,
+    "title": "Solving Differential Equations by Means of Physics Informed Neural Networks",
+    "authors": [
+      {
+        "name": "Tim Prokosch"
+      }
+    ],
+    "venue": "TU Kaiserslautern",
+    "summary": "A Python framework for approximating solutions to differential equations with physics-informed neural networks.",
+    "abstract": "The thesis develops a modular Python framework using physics-informed neural networks to approximate solutions to boundary and initial value problems. It evaluates the framework on ordinary and partial differential equations, including wave, heat, and Burgers equations, and discusses the strengths and limitations of the results.",
+    "links": [
+      {
+        "label": "ResearchGate",
+        "url": "https://www.researchgate.net/publication/364204003_Solving_differential_equations_by_means_of_Physics_Informed_Neural_Networks"
+      }
+    ],
+    "citation": {
+      "type": "bachelorsthesis",
+      "key": "prokosch2022pinn",
+      "fields": {
+        "title": "{Solving Differential Equations by Means of Physics Informed Neural Networks}",
+        "author": "Prokosch, Tim",
+        "school": "TU Kaiserslautern",
+        "year": "2022",
+        "url": "https://www.researchgate.net/publication/364204003_Solving_differential_equations_by_means_of_Physics_Informed_Neural_Networks"
+      }
+    }
+  }
+]

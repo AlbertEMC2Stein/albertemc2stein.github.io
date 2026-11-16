@@ -14,7 +14,7 @@ export default function SiteHeader() {
       </a>
       <nav aria-label="Main navigation">
         <a href="/#about">About</a>
-        <a href="/#research">Research</a>
+        <a href="/research/">Research</a>
         <a href="/#projects">Projects</a>
         <a href="/cv/">CV</a>
       </nav>
